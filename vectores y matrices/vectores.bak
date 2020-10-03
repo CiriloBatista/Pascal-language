@@ -1,0 +1,21 @@
+{ Vector: Conjunto de valores del mismo tipo }
+{ Matriz: vector unidimensional }
+program vectores;
+var
+    edad1, edad2, edad3, edad4, edad5, i: integer;
+    edades: array[0..4] of integer;
+
+begin
+    for i:= 0 to 4 do
+    begin
+        writeln('Dame el valor ',i);
+        readln(edades[i]);
+    end;
+
+    for i:= 4 to 0 do
+    begin
+        writeln('El valor de edades[',i,'] es igual a: ',edades[i]);
+        readln();
+    end;
+    readln();
+end.

@@ -1,0 +1,21 @@
+program parimpar;
+
+var
+  a, b, c: integer;
+  resultado: char;
+
+begin
+    writeln('Dame un número');
+    readln(a);
+    b:= a div 2;
+    c:= a / 2;
+    if(b <> c)then
+    begin
+        writeln('IMPAR');
+    end;
+    else
+    begin
+        writeln('Par');
+    end;
+    readln();
+end.

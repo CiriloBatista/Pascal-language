@@ -1,0 +1,21 @@
+program juego;
+
+var
+    a, b: integer;
+
+begin
+    b:= 81;
+    repeat
+        writeln('Adivina el numero');
+        readln(a);
+        begin
+           if (a < b)then
+            writeln('Mayor!');
+           else
+            writeln('Menor!');
+           end; 
+        end;
+    until (a = b);
+    writeln('Correcto!');
+    readln();
+end.
